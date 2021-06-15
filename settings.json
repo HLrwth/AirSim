@@ -1,0 +1,39 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Car",
+  "PawnPaths": {
+      "DefaultCar": {"PawnBP": "Class'/Game/Vehicle/crawler/crawler_blueprint.crawler_blueprint_C'"}
+  },
+
+ "Vehicles": {
+    "PhysXCar": {
+      "VehicleType": "PhysXCar",
+      "DefaultVehicleState": "",
+      "AutoCreate": true,
+      "PawnPath": "",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "RC": {
+        "RemoteControlID": -1
+      },
+      "Cameras": {   
+        "front_center": {
+	  "CaptureSettings": [
+	  {
+	  "Width": 1000,
+	  "Height": 320,
+	  "FOV_Degrees": 100
+	  }
+	  ],
+          "X": 2, "Y": 0, "Z": -1,
+		  "Pitch": 0, "Roll": 0, "Yaw": 0
+        }
+      }
+    }
+ },
+  "SubWindows": [
+    {"WindowID": 0, "CameraName": "front_center", "ImageType": 0, "VehicleName": "", "Visible": true}
+  ]
+
+}
